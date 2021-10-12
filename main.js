@@ -1,14 +1,24 @@
-// SELECCIONANDO ELEMENTOS
+// Seleccionando Elementos
 
-//Por ID
-let elemento1 = document.getElementById('parrafo1');
-elemento1.style.color = '#FF00FF';
+// Por ID
+let elementoPorId = document.getElementById('parrafo1');
+elementoPorId.innerHTML = 'HTML';
 
-//Por clase
-let elemento2 = document.getElementsByClassName('parrafos');
-contenedor.style.fontWeight = 800;
+// Por nombre de la clase
+let elementosPorClase = document.getElementsByClassName('parrafos');
+console.log(elementosPorClase.length);
+elementosPorClase[1].innerHTML = 'CSS';
 
-//Por etiqueta
-let elemento3 = document.getElementsByTagName('p')[2]
-console.log(elemento3);
-elemento3.style.color = '#FF00FF';
+// Por etiqueta
+let elementosPorEtiquetas = document.getElementsByTagName('p');
+console.log(elementosPorEtiquetas.length);
+elementosPorEtiquetas[2].innerHTML = 'Javascript';
+
+// Modificando estilos
+elementoPorId.style.background = 'black';
+elementoPorId.style.color = 'white';
+elementoPorId.style.borderRadius = '8px';
+elementoPorId.style.width = '250px';
+elementoPorId.style.textAlign = 'center';
+
+
